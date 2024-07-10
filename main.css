@@ -1,114 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
 }
-body{
 
+body {
     background-color: rgb(6, 6, 103);
 }
-header{
 
+header {
     margin-top: 10%;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-header img{
+
+header img {
     height: 36px;
     margin-right: 16px;
 }
-header h1
-{
+
+header h1 {
     padding: 5px;
     font-size: 40px;
     font-weight: bold;
 }
 
-.container{
+.container {
     border-radius: 0%;
     background-color: #299ae1;
-     max-width: 960px;
-     width: 100%;
-     margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
 
-form{
+form {
     display: flex;
     max-width: 640px;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 56px;
+    margin-bottom: 20px;
 }
 
-form{
-    display: flex;
-}
-form input{
-    font-size: 24px;
+form input {
+    font-size: 18px;
     background-color: white;
     border: none;
-    border-bottom:  2px solid black;
+    border-bottom: 2px solid black;
     padding: 8px;
+    width: 60%; /* Largura ajustável */
+    margin-right: 10px; /* Espaçamento entre os inputs */
 }
 
-form button{
+form button {
     background-color: rgb(2, 80, 13);
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 8px 20px; /* Espaçamento interno ajustável */
 }
 
-
-table{
+table {
     width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Colapso de bordas da tabela */
 }
-table th{
-    border-bottom:  2px solid black;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
 
+table th {
+    border-bottom: 2px solid black;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
 }
 
 table td {
-    padding: 16px 0;
-    text-align: center;
-    font-size: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-
-}
-table td img{
-    height: 30px;
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.resultado{
-  padding: 8px;
-  font-weight: bold;
-  color: white;
-  background-color: black;
-  border-radius: 3px;
-}
-
-.aprovado{
-    background-color: rgb(2, 80, 13);
-
-}
-.reprovado{
-    background-color: red;
-
-}
-form button:hover {
-    background-color: #4faf51;
-    color:white;
-    font-size: 24px;
+.resultado {
+    padding: 6px 12px;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
+    color: white;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: rgb(2, 80, 13);
+}
+
+.reprovado {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-top: 5%;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input, form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
